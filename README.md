@@ -30,6 +30,23 @@ The following steps were taken to produce the tidy data set found in the output 
 15. Create a data frame containing the mean of each measurement, for each subject_id within activity (line 54)
 16. Write the resulting summary data frame to a txt file (*tidy_data.txt*) as a table (line 57)
 
+**Required Data Files**
+
+The following files need to be in the same directory as *run_analysis.R* in order to execute the script:
+
+1. *X_train.txt_* - the training data set
+2. *Y_train.txt_* - the test data set
+3. *features.txt* - the labels (variable names) for the variables in each observation
+4. *y_train.txt_* - the activity codes (1 through 6) for all observations in the training data set
+5. *y_test.txt* - the activity codes (1 through 6) for all observations in the test data set
+6. *subject_train.txt* - the subject ids (1 through 30) for all observations in the training data set
+7. *subject_test.txt* - the subject ids (1 through 30) for all observations in the test data set
+8. *activity_labels.txt* - maps activity code to a descriptive string of that activity (for example, 1 == 'WALKING')
+
+**How to run the analysis**
+
+Place the script file and all required data files listed above in one directory.  "Source" the script file in R to run the analysis.  The output will be written to the file *tidy_data.txt* in the same directory.
+
 **Code Book**
 
 The description of the measurement variables are included in the associated file *features_info.txt*.  **Please note, however, that the measurements in the output data file (*tidy_data.txt*) are actually the *mean* values of the measurements described in the associated file, where the mean is the average of each measurement for each subject_id, within activity.**
